@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 3</title>
+    <title>Portfolio của TSUBASA</title>
     <style>
         .container-a{
             background-color: #212529;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             color: white;
+            padding: 15px 20px;
         }
-        p{
-            justify-content: flex-end;
+        .nav-menu{
+            display: flex;
+            gap: 15px;
+        }
+        .nav-menu p{
+            margin: 0;
             font-size: 15px;
-            padding: 10px;
-        }
-        img{
-            border-radius: 50%;
-            height: 200px;
-            width: auto;
-            align-items: flex-end;
-            margin: 50px;
+            cursor: pointer;
         }
         .container-b{
             background-color: #e9ecef;
             display: flex;
-            justify-content: flex-start;
             align-items: center;
+            padding: 30px;
+            gap: 20px;
+        }
+        img{
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
         }
         .projects{
             text-align: center;
@@ -37,13 +43,14 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            gap: 10px;
         }
-
         .project-item{
             background-color: #212529;
             color: white;
             padding: 15px 30px;
             border-radius: 5px;
+            margin: 10px;
         }
         .footer{
             background-color: #e9ecef;
@@ -55,15 +62,18 @@
             color: black;
             font-weight: bold;
             margin: 0 10px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div class="container-a">
         <h2>Portfolio của TSUBASA</h2>
-        <p>Home</p>
-        <p>Projects</p>
-        <p>Contact</p>
+        <div class="nav-menu">
+            <p>Home</p>
+            <p>Projects</p>
+            <p>Contact</p>
+        </div>
     </div>
     <div class="container-b">
         <img src="https://th.bing.com/th?id=OIF.oB74cZTeRVf5S6%2f12kRcbg&rs=1&pid=ImgDetMain" alt="Girlllll">
@@ -78,10 +88,8 @@
             <div class="project-item">Dự án 4</div>
         </div>
     </div>
-
     <div class="footer">
         Kết nối với tôi trên <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
     </div>
-
 </body>
 </html>
