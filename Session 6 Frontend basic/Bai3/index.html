@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        .container-a{
+            background-color: #212529;
+            display: flex;
+            color: white;
+        }
+        p{
+            justify-content: flex-end;
+            font-size: 15px;
+            padding: 10px;
+        }
+        img{
+            border-radius: 50%;
+            height: 200px;
+            width: auto;
+            align-items: flex-end;
+            margin: 50px;
+        }
+        .container-b{
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .projects{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .project-list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-item{
+            background-color: #212529;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+        }
+        .footer{
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .footer a{
+            color: black;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-a">
+        <h2>Portfolio của TSUBASA</h2>
+        <p>Home</p>
+        <p>Projects</p>
+        <p>Contact</p>
+    </div>
+    <div class="container-b">
+        <img src="https://th.bing.com/th?id=OIF.oB74cZTeRVf5S6%2f12kRcbg&rs=1&pid=ImgDetMain" alt="Girlllll">
+        <h3>Xin chào! Tôi là TSUBASA, một nhà phát triển web sáng tạo.</h3>
+    </div>
+    <div class="projects">
+        <h3>Dự án của tôi</h3>
+        <div class="project-list">
+            <div class="project-item">Dự án 1</div>
+            <div class="project-item">Dự án 2</div>
+            <div class="project-item">Dự án 3</div>
+            <div class="project-item">Dự án 4</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Kết nối với tôi trên <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header{
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header a{
+            color: white;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .container{
+            display: flex;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .sidebar{
+            width: 25%;
+            background: white;
+            padding: 15px;
+        }
+        .sidebar h3{
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .sidebar a{
+            display: block;
+            margin: 5px 0;
+            color: #007bff;
+        }
+        .main-content{
+            width: 75%;
+            padding-left: 20px;
+        }
+        .post{
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        .post h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .post img {
+            width: 150px;
+            display: block;
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        My Blog
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Chuyên mục</h3>
+            <a href="#">CSS</a>
+            <a href="#">Javascript</a>
+            <a href="#">HTML</a>
+        </div>
+        <div class="main-content">
+            <div class="post">
+                <h2>Bài viết 1</h2>
+                <img src="https://th.bing.com/th/id/OIP.2Awh6ZSKyuTtfmdOhpaRcQHaE8?rs=1&pid=ImgDetMain" alt="JS Image">
+                <p>Đây là nội dung tóm tắt của bài viết 1.</p>
+            </div>
+            <div class="post">
+                <h2>Bài viết 2</h2>
+                <img src="https://d1hjkbq40fs2x4.cloudfront.net/2017-08-21/files/landscape-photography_1645-t.jpg" alt="JS Image">
+                <p>Đây là nội dung tóm tắt của bài viết 2.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Liên hệ: email@example.com
+    </div>
+</body>
+</html>
