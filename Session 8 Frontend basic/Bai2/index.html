@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <style>
+        body{
+            background-color: gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        h1{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .a{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .a-b{
+            text-align: left;
+            flex: 1;
+        }
+        .a-b label{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="a">
+                <div class="a-b">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="a-b">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="a-b">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
