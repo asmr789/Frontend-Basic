@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.hop-thoai {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.hop-thoai h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+.hop-thoai input, .hop-thoai textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.hop-thoai .nut-bam {
+    display: flex;
+    justify-content: space-between;
+}
+.hop-thoai button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dong {
+    background: gray;
+    color: white;
+}
+.gui {
+    background: blue;
+    color: white;
+}
