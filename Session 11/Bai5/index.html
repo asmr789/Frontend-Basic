@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #9F4A4B;
+            color: white;
+            padding: 15px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            background: #9F4A4B;
+            padding: 10px;
+        }
+        .main, .aside {
+            background: #9F4A4B;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .column {
+            background: #9F4A4B;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 100%;
+        }
+        @media (min-width: 1200px) {
+            .container {
+                display: grid;
+                grid-template-areas:
+                    "header header"
+                    "main aside"
+                    "columns columns";
+                grid-template-columns: 2fr 1fr;
+                gap: 10px;
+            }
+            .header {
+                grid-area: header;
+            }
+            .main {
+                grid-area: main;
+            }
+            .aside {
+                grid-area: aside;
+            }
+            .columns {
+                grid-area: columns;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .column {
+                flex: 1 1 calc(33.33% - 10px);
+            }
+        }
+        @media (max-width: 1199px) and (min-width: 768px) {
+            .container {
+                display: grid;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "aside"
+                    "columns";
+            }
+            .header, .main, .aside, .columns {
+                width: 100%;
+            }
+            .columns {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .column {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+        @media (max-width: 767px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .columns {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">LOGO</div>
+            <nav class="nav">#nav</nav>
+        </header>
+        <main class="main">#main</main>
+        <aside class="aside">#aside</aside>
+        <div class="columns">
+            <div class="column">.column1</div>
+            <div class="column">.column2</div>
+            <div class="column">.column3</div>
+            <div class="column">.column4</div>
+            <div class="column">.column5</div>
+            <div class="column">.column6</div>
+        </div>
+    </div>
+</body>
+</html>
