@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+        .container {
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .header {
+            display: flex;
+            gap: 10px;
+        }
+        .header div {
+            width: 90%;
+            height: 50px;
+            background: orange;
+            border-radius: 5px;
+        }
+        .content {
+            width: 98%;
+            height: 150px;
+            background: yellow;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        .blue {
+            width: 32%;
+            height: 100px;
+            background: blue;
+            border-radius: 5px;
+        }
+        .gray {
+            width: 23.8%;
+            height: 80px;
+            background: gray;
+            border-radius: 5px;
+        }
+        @media (min-width: 768px) and (max-width: 1200px) {
+            .container {
+                width: 95%;
+            }
+            .header {
+                flex-direction: row;
+            }
+            .header div {
+                width: 48%;
+            }
+            .row {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .blue {
+                width: 48%;
+            }
+            .gray {
+                width: 48%;
+            }
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header div {
+                width: 100%;
+            }
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .blue, .gray, .content {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="content"></div>
+        <div class="row">
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+        </div>
+        <div class="row">
+            <div class="gray"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+        </div>
+    </div>
+</body>
+</html>

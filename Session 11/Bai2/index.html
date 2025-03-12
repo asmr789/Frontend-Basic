@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <style>
+        body {
+            display: flex;
+            background-color: #4B0082;
+        }
+        .out {
+            border: 15px solid gainsboro;
+            margin-right: 100px;
+        }
+        .container1 {
+            max-width: 700px;
+            max-height: 1500px;
+            background: white;
+            padding: 10px;
+        }
+        .header {
+            width: 600px;
+            text-align: center;
+            align-items: center;
+            background: red;
+            padding: 25px;
+            color: white;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .footer {
+            background: blue;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar1 {
+            background: green; 
+            width: 45%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .sidebar2 {
+            background: pink; 
+            width: 45%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .a {
+            width: 50%;
+            height: 300px;
+            background: yellow;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .a1 {
+            height: 100px;
+            background: yellow;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .footer1 {
+            background: gainsboro; 
+            width: 30%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        @media (max-width: 1024px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .sidebar1, .sidebar2, .a, .out,.footer1 {
+                width: 90%;
+            }
+            .header, .footer {
+                width: 87%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="container1">
+            <div class="header">Header</div>
+            <div class="content">
+                <div class="sidebar1">Sidebar 1</div>
+                <div class="sidebar2">Sidebar 2</div>
+            </div>
+            <div class="footer">Footer</div>
+            <div class="content">
+                <div class="footer1">1</div>
+                <div class="footer1">2</div>
+                <div class="footer1">3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

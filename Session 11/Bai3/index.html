@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        body {
+            display: flex;
+            background-color: #4B0082;
+        }
+        .out {
+            border: 15px solid gainsboro;
+            margin-right: 100px;
+        }
+        .container1 {
+            max-width: 700px;
+            max-height: 1500px;
+            background: white;
+            padding: 10px;
+        }
+        .header {
+            width: 600px;
+            height: 200px;
+            text-align: center;
+            align-items: center;
+            background: red;
+            padding: 25px;
+            color: white;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .footer {
+            width: 45%;
+            background: blue;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .footer1 {
+            background: green;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar {
+            background: green; 
+            width: 20%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .a {
+            width: 50%;
+            height: 300px;
+            background: yellow;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        .a1 {
+            height: 100px;
+            background: yellow;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .sidebar, .out,.footer1 {
+                width: 90%;
+            }
+            .header, .footer {
+                width: 87%;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1000px) {
+            body {
+                flex-direction: row;
+                align-items: center;
+            }
+            .content {
+                flex-direction: row;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .header {
+                width: 87%;
+                height: 90px;
+            }
+            .footer {
+                width: 38%;
+            }
+            .sidebar {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="container1">
+            <div class="header">Header</div>
+            <div class="content">
+                <div class="sidebar">Sidebar 1</div>
+                <div class="sidebar">Sidebar 2</div>
+                <div class="sidebar">Sidebar 1</div>
+                <div class="sidebar">Sidebar 2</div>
+            </div>
+            <div class="content">
+                <div class="footer">Footer</div>
+                <div class="footer">Footer</div>
+            </div>
+                <div class="footer1">1</div>
+        </div>
+    </div>
+</body>
+</html>
