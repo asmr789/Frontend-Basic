@@ -3,16 +3,16 @@ let b = Number(prompt("Nhập b: "));
 let c = Number(prompt("Nhập c: "));
 
 if (a + b > c && a + c > b && b + c > a) {
-    console.log("Hợp lệ.");
+    document.write("Hợp lệ.");
     if (a === b && b === c) {
-        console.log("Tam giác đều.");
+        document.write("Tam giác đều.");
     } else if (a === b || b === c || a === c) {
-        console.log("Tam giác cân.");
+        document.write("Tam giác cân.");
     } else if (a * a + b * b === c * c || a * a + c * c === b * b || b * b + c * c === a * a) {
-        console.log("Tam giác vuông.");
+        document.write("Tam giác vuông.");
     } else {
-        console.log("Tam giác thường.");
+        document.write("Tam giác thường.");
     }
 } else {
-    console.log("Không hợp lệ.");
+    document.write("Không hợp lệ.");
 }
