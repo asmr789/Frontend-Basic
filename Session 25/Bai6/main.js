@@ -4,7 +4,7 @@ function daonguoc(aray) {
 }
 let arayNhap = prompt("Nhập chuỗi:");
 if (daonguoc(arayNhap)) {
-    alert("đối xứng!");
+    console.log("đối xứng!");
 } else {
-    alert("Không đối xứng!");
+    console.log("Không đối xứng!");
 }
